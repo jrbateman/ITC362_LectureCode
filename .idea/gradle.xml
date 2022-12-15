@@ -11,12 +11,14 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/1.FirstApp" />
+            <option value="$PROJECT_DIR$/10.RecylerView" />
             <option value="$PROJECT_DIR$/2.InteractiveUI" />
             <option value="$PROJECT_DIR$/3.ActivityLifeCycle" />
             <option value="$PROJECT_DIR$/4.PersistingUIState" />
             <option value="$PROJECT_DIR$/5.Debugging" />
             <option value="$PROJECT_DIR$/6.Testing" />
             <option value="$PROJECT_DIR$/7.SecondActivity" />
+            <option value="$PROJECT_DIR$/9.Fragments" />
             <option value="$PROJECT_DIR$/app" />
           </set>
         </option>
