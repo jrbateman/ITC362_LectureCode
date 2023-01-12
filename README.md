@@ -1,4 +1,4 @@
-# ITC362 LectureCode
+# ITC362 Lecture Code
 
 ITC 362 Spring 2023 Lecture Code
 
