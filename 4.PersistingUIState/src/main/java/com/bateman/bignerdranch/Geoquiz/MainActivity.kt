@@ -35,6 +35,7 @@ class MainActivity : AppCompatActivity() {
             checkAnswer(false)
         }
 
+
         binding.nextButton.setOnClickListener {
             //currentIndex = (currentIndex + 1) % questionBank.size
             Log.d(TAG, "binding.nextButton.setOnClickListener")
