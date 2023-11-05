@@ -15,7 +15,7 @@ import com.bateman.msu.makingnetworkrequests.api.FlickrApi
 import com.bateman.msu.makingnetworkrequests.databinding.FragmentPhotoGalleryBinding
 import kotlinx.coroutines.launch
 import retrofit2.Retrofit
-import retrofit2.converter.scalars.ScalarsConverterFactory
+//import retrofit2.converter.scalars.ScalarsConverterFactory
 import retrofit2.create
 
 private const val TAG = "PhotoGalleryFragment"
@@ -65,8 +65,9 @@ class PhotoGalleryFragment : Fragment(){
         viewLifecycleOwner.lifecycleScope.launch {
             viewLifecycleOwner.repeatOnLifecycle(Lifecycle.State.STARTED) {
                 photoGalleryViewModel.galleryItems.collect { items ->
-                //Log.d(TAG, "Response received: $items")
+
                 binding.photoGrid.adapter = PhotoListAdapter(items)
+                    Log.d(TAG, "Items = $items")
                 }
             }
         }
