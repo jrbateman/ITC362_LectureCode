@@ -1,6 +1,6 @@
 # ITC362 Lecture Code
 
-ITC 362 Spring 2023 Lecture Code
+ITC 362 Spring 2024 Lecture Code
 
 The code in this repository is for the demonstration/lecture apps used in ITC - Mobile App Development.
 
