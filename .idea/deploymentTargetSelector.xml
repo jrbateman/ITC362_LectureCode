@@ -35,6 +35,9 @@
       <SelectionState runConfigName="12.Coroutines_and_Databases">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
+      <SelectionState runConfigName="13.FragmentNavigation">
+        <option name="selectionMode" value="DROPDOWN" />
+      </SelectionState>
     </selectionStates>
   </component>
 </project>
