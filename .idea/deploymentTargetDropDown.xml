@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="deploymentTargetDropDown">
+    <value>
+      <entry key="1.FirstApp">
+        <State />
+      </entry>
+      <entry key="10.RecylerView">
+        <State />
+      </entry>
+      <entry key="11.CreateUIs">
+        <State />
+      </entry>
+      <entry key="12.Coroutines_and_Databases">
+        <State />
+      </entry>
+      <entry key="13.FragmentNavigation">
+        <State />
+      </entry>
+      <entry key="2.InteractiveUI">
+        <State />
+      </entry>
+      <entry key="20.MakingNetworkRequests">
+        <State />
+      </entry>
+      <entry key="3.ActivityLifeCycle">
+        <State />
+      </entry>
+      <entry key="4.PersistingUIState">
+        <State />
+      </entry>
+      <entry key="5.Debugging">
+        <State />
+      </entry>
+      <entry key="6.Testing">
+        <State />
+      </entry>
+      <entry key="7.SecondActivity">
+        <State />
+      </entry>
+      <entry key="9.Fragments">
+        <State />
+      </entry>
+      <entry key="app">
+        <State />
+      </entry>
+    </value>
+  </component>
+</project>
