@@ -1,5 +1,4 @@
 package com.bateman.bignerdranch.CriminalIntent
-
 import android.content.Context
 import androidx.room.Room
 import com.bateman.bignerdranch.CriminalIntent.database.CrimeDatabase
