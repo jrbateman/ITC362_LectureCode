@@ -30,20 +30,29 @@ android {
     kotlinOptions {
         jvmTarget = '17'
     }
-    buildFeatures{
+    buildFeatures {
         viewBinding true
     }
-}
+    packaging {
+        resources {
+            excludes += "/META-INF/{AL2.0,LGPL2.1}"
+            excludes += "/META-INF/LICENSE.md"
+            excludes += "/META-INF/LICENSE-notice.md"
+        }
+    }
+    dependencies {
 
-dependencies {
-
-    implementation 'androidx.core:core-ktx:1.13.1'
-    implementation 'androidx.appcompat:appcompat:1.6.1'
-    implementation 'com.google.android.material:material:1.12.0'
-    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
-    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.0'
-    implementation 'androidx.activity:activity-ktx:1.9.0'
-    testImplementation 'junit:junit:4.13.2'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+        implementation libs.androidx.core.ktx
+        implementation libs.androidx.appcompat.v161
+        implementation libs.material
+        implementation libs.androidx.constraintlayout
+        implementation libs.androidx.lifecycle.viewmodel.ktx.v280
+        implementation libs.activity.ktx
+        testImplementation libs.junit
+        androidTestImplementation(libs.androidx.junit)
+        androidTestImplementation(libs.androidx.espresso.core)
+        androidTestImplementation(libs.jupiter.junit.jupiter)
+        androidTestImplementation(libs.androidx.runner)
+        androidTestImplementation (libs.androidx.espresso.core.v361)
+    }
 }

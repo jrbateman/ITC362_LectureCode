@@ -1,11 +1,13 @@
 [versions]
-agp = "8.4.1"
+agp = "8.4.2"
+appcompatVersion = "1.6.1"
 kotlin = "1.9.0"
 coreKtx = "1.13.1"
 junit = "4.13.2"
-junitVersion = "1.1.5"
-espressoCore = "3.5.1"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
 appcompat = "1.7.0"
+lifecycleViewmodelKtxVersion = "2.8.0"
 material = "1.12.0"
 activity = "1.9.0"
 constraintlayout = "2.1.4"
@@ -13,9 +15,15 @@ moshiKotlinCodegen = "1.14.0"
 roomCompiler = "2.6.1"
 lifecycleViewmodelKtx = "2.8.2"
 activityKtx = "1.9.0"
+junitJupiterVersion = "5.8.1"
+runner = "1.6.1"
+espressoCoreVersion = "3.6.1"
+
 
 [libraries]
+androidx-appcompat-v161 = { module = "androidx.appcompat:appcompat", version.ref = "appcompatVersion" }
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-lifecycle-viewmodel-ktx-v280 = { module = "androidx.lifecycle:lifecycle-viewmodel-ktx", version.ref = "lifecycleViewmodelKtxVersion" }
 androidx-room-compiler = { module = "androidx.room:room-compiler", version.ref = "roomCompiler" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
@@ -27,6 +35,10 @@ activity-ktx = { module = "androidx.activity:activity-ktx", version.ref = "activ
 androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
 moshi-kotlin-codegen = { module = "com.squareup.moshi:moshi-kotlin-codegen", version.ref = "moshiKotlinCodegen" }
 androidx-lifecycle-viewmodel-ktx = { module = "androidx.lifecycle:lifecycle-viewmodel-ktx", version.ref = "lifecycleViewmodelKtx" }
+jupiter-junit-jupiter = { module = "org.junit.jupiter:junit-jupiter", version.ref = "junitJupiterVersion" }
+androidx-espresso-core-v361 = { module = "androidx.test.espresso:espresso-core", version.ref = "espressoCoreVersion" }
+androidx-runner = { module = "androidx.test:runner", version.ref = "runner" }
+
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

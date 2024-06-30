@@ -17,5 +17,7 @@ class QuizViewModelTest {
         val quizViewModel = QuizViewModel(savedStateHandle)
         assertEquals(R.string.question_asia, quizViewModel.currentQuestionText)
         quizViewModel.moveToNext()
+        assertEquals(R.string.question_australia, quizViewModel.currentQuestionText)
+
     }
     }

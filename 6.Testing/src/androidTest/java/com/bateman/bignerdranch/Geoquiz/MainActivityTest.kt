@@ -15,8 +15,6 @@ import org.junit.runner.RunWith
 import androidx.test.espresso.action.ViewActions.click
 
 
-
-
 @RunWith(AndroidJUnit4::class)
 class MainActivityTest {
 
