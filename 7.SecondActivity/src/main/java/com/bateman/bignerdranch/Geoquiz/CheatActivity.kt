@@ -8,8 +8,11 @@ import android.os.Bundle
 import com.bateman.bignerdranch.Geoquiz.databinding.ActivityCheatBinding
 
 const val EXTRA_ANSWER_SHOWN = "com.bateman.bigdranch.android.geoquiz.answer_shown"
-private const val EXTRA_ANSWER_IS_TRUE =
-    "com.bateman.bignerdranch.android.geoquiz.answer_is_true"
+//const val EXTRA_ANSWER_SHOWN = "com.bateman.chapter_seven.answer_shown"
+
+
+private const val EXTRA_ANSWER_IS_TRUE = "com.bateman.bignerdranch.android.geoquiz.answer_is_true"
+//private const val EXTRA_ANSWER_IS_TRUE = "com.bateman.chapter_seven.answer_is_true"
 
 class CheatActivity : AppCompatActivity() {
     private lateinit var binding: ActivityCheatBinding
