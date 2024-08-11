@@ -31,8 +31,8 @@ android {
     kotlinOptions {
         jvmTarget = '17'
     }
-    viewBinding {
-        enabled = true
+    buildFeatures {
+        viewBinding = true
     }
 }
 
@@ -45,7 +45,6 @@ dependencies {
     implementation(libs.androidx.constraintlayout)
     implementation(libs.androidx.lifecycle.viewmodel.ktx)
     implementation(libs.activity.ktx)
-
     testImplementation(libs.junit)
     testImplementation(libs.jupiter.junit.jupiter)
 
