@@ -37,7 +37,7 @@ class MainActivity : AppCompatActivity() {
                 this,
                 R.string.correct_toast,
                 Toast.LENGTH_SHORT
-            )true
+            )
                 .show()
         }
         /*       falseButton.setOnClickListener {
