@@ -51,7 +51,7 @@ androidx-lifecycle-viewmodel-ktx = { module = "androidx.lifecycle:lifecycle-view
 jupiter-junit-jupiter = { module = "org.junit.jupiter:junit-jupiter", version.ref = "junitJupiterVersion" }
 androidx-espresso-core-v361 = { module = "androidx.test.espresso:espresso-core", version.ref = "espressoCoreVersion" }
 androidx-runner = { module = "androidx.test:runner", version.ref = "runner" }
-androidx-fragment = {module = "androidx.fragment:fragment-ktx", version.ref="fragment"}
+
 
 
 [plugins]
