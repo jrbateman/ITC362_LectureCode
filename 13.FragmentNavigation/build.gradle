@@ -1,7 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
-    id "com.google.devtools.ksp"
+    alias(libs.plugins.ksp)
     id 'androidx.navigation.safeargs'
 }
 
@@ -61,8 +61,6 @@ dependencies {
     implementation libs.androidx.room.ktx
     ksp(libs.moshi.kotlin.codegen)
     ksp(libs.androidx.room.compiler)
-    implementation libs.androidx.room.runtime
-    annotationProcessor libs.androidx.room.compiler
 
     implementation libs.androidx.navigation.fragment.ktx
     implementation libs.androidx.navigation.ui.ktx

@@ -29,6 +29,7 @@ activityKtx = "1.9.2"
 junitJupiterVersion = "5.8.1"
 runner = "1.6.2"
 espressoCoreVersion = "3.6.1"
+kspVersion = "2.0.0-1.0.21"
 
 
 
@@ -73,4 +74,5 @@ androidx-runner = { module = "androidx.test:runner", version.ref = "runner" }
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "kspVersion" }
 
