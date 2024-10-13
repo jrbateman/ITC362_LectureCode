@@ -2,7 +2,8 @@ plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
     id "com.google.devtools.ksp"
- }
+    id 'androidx.navigation.safeargs'
+}
 
 android {
     namespace 'com.bateman.msu.criminalintent'
@@ -47,23 +48,25 @@ buildFeatures{
 
 dependencies {
 
-    implementation 'androidx.core:core-ktx:1.13.1'
-    implementation 'androidx.appcompat:appcompat:1.6.1'
-    implementation 'com.google.android.material:material:1.12.0'
-    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
-    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.0'
-    implementation 'androidx.fragment:fragment-ktx:1.7.1'
-    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.8.0'
-    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.8.0'
-    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.8.0'
-    implementation 'androidx.room:room-common:2.6.1'
-    implementation 'androidx.room:room-ktx:2.6.1'
-    ksp("com.squareup.moshi:moshi-kotlin-codegen:1.14.0")
-    ksp("androidx.room:room-compiler:2.6.1")
-    implementation "androidx.room:room-runtime:2.6.1"
-    annotationProcessor "androidx.room:room-compiler:2.6.1"
-    implementation "androidx.navigation:navigation-fragment-ktx:2.7.7"
-    implementation "androidx.navigation:navigation-ui-ktx:2.7.7"
+    implementation libs.androidx.core.ktx
+    implementation libs.androidx.appcompat.appcompat.v161
+    implementation libs.material
+    implementation libs.androidx.constraintlayout
+    implementation libs.androidx.lifecycle.lifecycle.viewmodel.ktx.v280
+    implementation libs.androidx.fragment.ktx.v171
+    implementation libs.kotlinx.coroutines.core
+    implementation libs.kotlinx.coroutines.android
+    implementation libs.androidx.lifecycle.runtime.ktx
+    implementation libs.androidx.room.common
+    implementation libs.androidx.room.ktx
+    ksp(libs.moshi.kotlin.codegen)
+    ksp(libs.androidx.room.compiler)
+    implementation libs.androidx.room.runtime
+    annotationProcessor libs.androidx.room.compiler
+
+    implementation libs.androidx.navigation.fragment.ktx
+    implementation libs.androidx.navigation.ui.ktx
+
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
