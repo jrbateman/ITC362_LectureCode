@@ -48,22 +48,25 @@ buildFeatures{
 
 dependencies {
 
-    implementation libs.androidx.core.ktx
-    implementation libs.androidx.appcompat.appcompat.v161
-    implementation libs.material
-    implementation libs.androidx.constraintlayout
-    implementation libs.androidx.lifecycle.lifecycle.viewmodel.ktx.v280
-    implementation libs.androidx.fragment.ktx.v171
-    implementation libs.kotlinx.coroutines.core
-    implementation libs.kotlinx.coroutines.android
-    implementation libs.androidx.lifecycle.runtime.ktx
-    implementation libs.androidx.room.common
-    implementation libs.androidx.room.ktx
+    implementation(libs.androidx.core.ktx)
+    implementation(libs.androidx.appcompat)
+    implementation(libs.material)
+    implementation(libs.androidx.constraintlayout)
+    implementation(libs.androidx.lifecycle.viewmodel.ktx)
+    implementation(libs.androidx.fragment.ktx)
+
+    //Coroutines
+    implementation(libs.kotlinx.coroutines.core)
+    implementation(libs.kotlinx.coroutines.android)
+    //Rooms
+    implementation (libs.androidx.room.common)
+    implementation (libs.androidx.room.ktx)
+    //KSP
     ksp(libs.moshi.kotlin.codegen)
     ksp(libs.androidx.room.compiler)
-
-    implementation libs.androidx.navigation.fragment.ktx
-    implementation libs.androidx.navigation.ui.ktx
+    // Navigation
+    implementation (libs.androidx.navigation.fragment.ktx)
+    implementation (libs.androidx.navigation.ui.ktx)
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
