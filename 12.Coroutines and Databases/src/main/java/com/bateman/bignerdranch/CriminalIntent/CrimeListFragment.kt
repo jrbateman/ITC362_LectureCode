@@ -1,7 +1,6 @@
 package com.bateman.bignerdranch.CriminalIntent
 
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -12,8 +11,6 @@ import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.bateman.bignerdranch.CriminalIntent.databinding.FragmentCrimeListBinding
-import kotlinx.coroutines.Job
-import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
 
 //private const val TAG = "CrimeListFragment"
