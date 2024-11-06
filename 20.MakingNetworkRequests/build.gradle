@@ -1,8 +1,8 @@
 plugins {
-    id 'com.android.application'
-    id 'org.jetbrains.kotlin.android'
-    id 'org.jetbrains.kotlin.kapt'
-    id "com.google.devtools.ksp"
+    alias(libs.plugins.android.application)
+    alias(libs.plugins.jetbrains.kotlin.android)
+    alias(libs.plugins.ksp)
+    alias(libs.plugins.safeargs)
 }
 
 android {
@@ -39,25 +39,29 @@ android {
 
 dependencies {
 
-    implementation 'androidx.core:core-ktx:1.13.1'
-    implementation 'androidx.appcompat:appcompat:1.6.1'
-    implementation 'com.google.android.material:material:1.12.0'
-    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
-    implementation 'androidx.fragment:fragment-ktx:1.7.1'
-    implementation 'androidx.recyclerview:recyclerview:1.3.2'
-    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.0'
-    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.8.0'
-    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
-    implementation 'com.squareup.okhttp3:okhttp:4.10.0'
-    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.8.0'
-    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.8.0'
-    implementation 'com.squareup.moshi:moshi:1.14.0'
-    //implementation 'com.squareup.retrofit2:converter-scalars:2.9.0'
-    implementation 'com.squareup.retrofit2:converter-moshi:2.9.0'
-    implementation 'io.coil-kt:coil:2.2.2'
-    ksp("com.squareup.moshi:moshi-kotlin-codegen:1.14.0")
-    ksp("androidx.room:room-compiler:2.6.1")
-    implementation "androidx.room:room-runtime:2.6.1"
+    implementation libs.androidx.core.ktx
+    implementation libs.androidx.appcompat.appcompat.v161.x2
+    implementation libs.material
+    implementation libs.androidx.constraintlayout
+    implementation libs.fragment.ktx.v171
+    implementation libs.androidx.recyclerview
+    implementation libs.androidx.lifecycle.lifecycle.viewmodel.ktx.v280.x2
+    implementation libs.androidx.lifecycle.runtime.ktx.v280
+    implementation libs.retrofit
+    implementation libs.okhttp
+    implementation libs.kotlinx.coroutines.core
+    implementation libs.kotlinx.coroutines.android
+
+    // Chapter 20 libraries
+    implementation libs.moshi
+    implementation libs.converter.moshi
+    implementation libs.coil
+    ksp(libs.moshi.kotlin.codegen)
+    ksp(libs.androidx.room.compiler)
+    implementation libs.androidx.room.runtime
+
+
+
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'

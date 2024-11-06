@@ -45,8 +45,9 @@ class CrimeDetailFragment : Fragment() {
 
         binding.apply {
             crimeTitle.doOnTextChanged { text, _, _, _ ->
+
                 crime = crime.copy(title = text.toString())
-            }
+                            }
 
             crimeDate.apply {
                 text = crime.date.toString()

@@ -1,14 +1,15 @@
 [versions]
 agp = "8.5.2"
 androidxAppcompat = "1.7.0"
-androidxAppcompatVersion = "1.7.0"
+androidxAppcompatAppcompat = "1.7.0"
+androidxFragmentKtx = "1.8.5"
 androidxJunit = "1.2.1"
 androidxEspressoCore = "3.6.1"
-androidxLifecycleViewmodelKtx = "2.8.6"
-androidxLifecycleViewmodelKtxVersion = "2.8.6"
+androidxLifecycleLifecycleViewmodelKtx = "2.8.7"
+androidxLifecycleViewmodelKtx = "2.8.7"
 appcompatVersion = "1.7.0"
-fragmentKtx = "1.8.4"
-fragmentKtxVersion = "1.8.4"
+coil = "2.2.2"
+fragmentKtx = "1.8.5"
 kotlin = "2.0.0"
 coreKtx = "1.13.1"
 junit = "4.13.2"
@@ -16,16 +17,19 @@ junitVersion = "1.2.1"
 espressoCore = "3.6.1"
 appcompat = "1.7.0"
 kotlinxCoroutinesCore = "1.8.0"
-lifecycleViewmodelKtxVersion = "2.8.6"
+lifecycleRuntimeKtx = "2.8.7"
+lifecycleViewmodelKtxVersion = "2.8.7"
 material = "1.12.0"
-activity = "1.9.2"
-constraintlayout = "2.1.4"
+activity = "1.9.3"
+constraintlayout = "2.2.0"
 moshiKotlinCodegen = "1.14.0"
-navigationFragmentKtx = "2.8.2"
+navigationFragmentKtx = "2.8.3"
+okhttp = "4.10.0"
 recyclerview = "1.3.2"
+retrofit = "2.9.0"
 roomCompiler = "2.6.1"
-lifecycleViewmodelKtx = "2.8.6"
-activityKtx = "1.9.2"
+lifecycleViewmodelKtx = "2.8.7"
+activityKtx = "1.9.3"
 junitJupiterVersion = "5.8.1"
 runner = "1.6.2"
 espressoCoreVersion = "3.6.1"
@@ -34,15 +38,14 @@ kspVersion = "2.0.0-1.0.21"
 
 
 [libraries]
-androidx-appcompat-appcompat-v161 = { module = "androidx.appcompat:appcompat", version.ref = "androidxAppcompatVersion" }
+androidx-appcompat-appcompat-v161-x2 = { module = "androidx.appcompat:appcompat", version.ref = "androidxAppcompatAppcompat" }
 androidx-appcompat-v161 = { module = "androidx.appcompat:appcompat", version.ref = "appcompatVersion" }
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 androidx-espresso-core-v351 = { module = "androidx.test.espresso:espresso-core", version.ref = "androidxEspressoCore" }
 androidx-fragment-ktx = { module = "androidx.fragment:fragment-ktx", version.ref = "fragmentKtx" }
-androidx-fragment-ktx-v171 = { module = "androidx.fragment:fragment-ktx", version.ref = "fragmentKtxVersion" }
 androidx-junit-v115 = { module = "androidx.test.ext:junit", version.ref = "androidxJunit" }
-androidx-lifecycle-lifecycle-viewmodel-ktx-v280 = { module = "androidx.lifecycle:lifecycle-viewmodel-ktx", version.ref = "androidxLifecycleViewmodelKtxVersion" }
-androidx-lifecycle-runtime-ktx = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version.ref = "androidxLifecycleViewmodelKtxVersion" }
+androidx-lifecycle-lifecycle-viewmodel-ktx-v280-x2 = { module = "androidx.lifecycle:lifecycle-viewmodel-ktx", version.ref = "androidxLifecycleLifecycleViewmodelKtx" }
+androidx-lifecycle-runtime-ktx-v280 = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
 androidx-lifecycle-viewmodel-ktx-v280 = { module = "androidx.lifecycle:lifecycle-viewmodel-ktx", version.ref = "lifecycleViewmodelKtxVersion" }
 
 androidx-recyclerview = { module = "androidx.recyclerview:recyclerview", version.ref = "recyclerview" }
@@ -51,6 +54,9 @@ androidx-room-compiler = { module = "androidx.room:room-compiler", version.ref =
 androidx-room-ktx = { module = "androidx.room:room-ktx", version.ref = "roomCompiler" }
 androidx-room-runtime = { module = "androidx.room:room-runtime", version.ref = "roomCompiler" }
 appcompat-v161 = { module = "androidx.appcompat:appcompat", version.ref = "androidxAppcompat" }
+coil = { module = "io.coil-kt:coil", version.ref = "coil" }
+converter-moshi = { module = "com.squareup.retrofit2:converter-moshi", version.ref = "retrofit" }
+fragment-ktx-v171 = { module = "androidx.fragment:fragment-ktx", version.ref = "androidxFragmentKtx" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
 androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
@@ -62,6 +68,7 @@ material = { group = "com.google.android.material", name = "material", version.r
 androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
 activity-ktx = { module = "androidx.activity:activity-ktx", version.ref = "activityKtx" }
 androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+moshi = { module = "com.squareup.moshi:moshi", version.ref = "moshiKotlinCodegen" }
 moshi-kotlin-codegen = { module = "com.squareup.moshi:moshi-kotlin-codegen", version.ref = "moshiKotlinCodegen" }
 androidx-lifecycle-viewmodel-ktx = { module = "androidx.lifecycle:lifecycle-viewmodel-ktx", version.ref = "lifecycleViewmodelKtx" }
 jupiter-junit-jupiter = { module = "org.junit.jupiter:junit-jupiter", version.ref = "junitJupiterVersion" }
@@ -69,6 +76,8 @@ androidx-espresso-core-v361 = { module = "androidx.test.espresso:espresso-core",
 androidx-runner = { module = "androidx.test:runner", version.ref = "runner" }
 androidx-navigation-fragment-ktx = { module = "androidx.navigation:navigation-fragment-ktx", version.ref = "navigationFragmentKtx" }
 androidx-navigation-ui-ktx = { module = "androidx.navigation:navigation-ui-ktx", version.ref = "navigationFragmentKtx" }
+okhttp = { module = "com.squareup.okhttp3:okhttp", version.ref = "okhttp" }
+retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
 
 
 [plugins]

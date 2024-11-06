@@ -58,12 +58,15 @@ dependencies {
     //Coroutines
     implementation(libs.kotlinx.coroutines.core)
     implementation(libs.kotlinx.coroutines.android)
+
     //Rooms
     implementation (libs.androidx.room.common)
     implementation (libs.androidx.room.ktx)
+
     //KSP
     ksp(libs.moshi.kotlin.codegen)
     ksp(libs.androidx.room.compiler)
+
     // Navigation
     implementation (libs.androidx.navigation.fragment.ktx)
     implementation (libs.androidx.navigation.ui.ktx)
