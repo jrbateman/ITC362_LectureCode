@@ -39,20 +39,17 @@ android {
 
 dependencies {
 
-    implementation libs.androidx.core.ktx
-    implementation libs.androidx.appcompat.appcompat.v161.x2
-    implementation libs.material
-    implementation libs.androidx.constraintlayout
-    implementation libs.fragment.ktx.v171
-    implementation libs.androidx.recyclerview
-    implementation libs.androidx.lifecycle.lifecycle.viewmodel.ktx.v280.x2
-    implementation libs.androidx.lifecycle.runtime.ktx.v280
-    implementation libs.retrofit
-    implementation libs.okhttp
-    implementation libs.kotlinx.coroutines.core
-    implementation libs.kotlinx.coroutines.android
+    implementation(libs.androidx.core.ktx)
+    implementation(libs.androidx.appcompat)
+    implementation(libs.material)
+    implementation(libs.androidx.constraintlayout)
+    implementation(libs.androidx.lifecycle.viewmodel.ktx)
+    implementation(libs.androidx.fragment.ktx)
+
 
     // Chapter 20 libraries
+    implementation libs.retrofit
+    implementation libs.okhttp
     implementation libs.moshi
     implementation libs.converter.moshi
     implementation libs.coil
