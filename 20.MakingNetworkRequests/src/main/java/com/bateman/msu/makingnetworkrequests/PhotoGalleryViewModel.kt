@@ -8,10 +8,18 @@ import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
+import java.time.LocalDate
+import java.time.temporal.ChronoUnit
+import kotlin.random.Random
 
 private const val TAG = "PhotoGalleryViewModel"
 
 class PhotoGalleryViewModel : ViewModel() {
+
+    val startDate = LocalDate.of(2000, 1, 1)
+    val endDate = LocalDate.of(2024, 12, 31)
+    val randdate = randomDate(startDate,endDate).toString()
+
     private val photoRepository = PhotoRepository()
 
     private val _galleryItems: MutableStateFlow<List<GalleryItem>> =
@@ -22,7 +30,7 @@ class PhotoGalleryViewModel : ViewModel() {
     init {
         viewModelScope.launch {
             try {
-                val items = photoRepository.fetchPhotos()
+                val items = photoRepository.fetchPhotos(randdate)
                 Log.d(TAG, "Items received: $items")
                 _galleryItems.value = items
             } catch (ex: Exception) {
@@ -30,4 +38,13 @@ class PhotoGalleryViewModel : ViewModel() {
             }
         }
     }
+
+
+    fun randomDate(start: LocalDate, end: LocalDate): LocalDate {
+        val daysBetween = ChronoUnit.DAYS.between(start, end)
+        val randomDays = Random.nextLong(daysBetween + 1)
+        return start.plusDays(randomDays)
+    }
+
+
 }
