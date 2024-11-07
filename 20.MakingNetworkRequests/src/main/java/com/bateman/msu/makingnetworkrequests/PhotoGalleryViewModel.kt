@@ -18,7 +18,7 @@ class PhotoGalleryViewModel : ViewModel() {
 
     val startDate = LocalDate.of(2000, 1, 1)
     val endDate = LocalDate.of(2024, 12, 31)
-    val randdate = randomDate(startDate,endDate).toString()
+    val randate = randomDate(startDate,endDate).toString()
 
     private val photoRepository = PhotoRepository()
 
@@ -30,7 +30,7 @@ class PhotoGalleryViewModel : ViewModel() {
     init {
         viewModelScope.launch {
             try {
-                val items = photoRepository.fetchPhotos(randdate)
+                val items = photoRepository.fetchPhotos(randate)
                 Log.d(TAG, "Items received: $items")
                 _galleryItems.value = items
             } catch (ex: Exception) {
@@ -39,7 +39,7 @@ class PhotoGalleryViewModel : ViewModel() {
         }
     }
 
-
+  // Generate Random Date
     fun randomDate(start: LocalDate, end: LocalDate): LocalDate {
         val daysBetween = ChronoUnit.DAYS.between(start, end)
         val randomDays = Random.nextLong(daysBetween + 1)

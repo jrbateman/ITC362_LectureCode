@@ -13,9 +13,6 @@ import kotlin.random.Random
 class PhotoRepository() {
 
     private val flickrApi: FlickrApi
-    val startDate = LocalDate.of(2000, 1, 1)
-    val endDate = LocalDate.of(2024, 12, 31)
-    val randdate = randomDate(startDate,endDate).toString()
 
 
     init {
@@ -37,11 +34,7 @@ class PhotoRepository() {
         flickrApi.fetchPhotos(date = date).photos.galleryItems
        // flickrApi.fetchPhotos(date).photos.galleryItems
 
-    fun randomDate(start: LocalDate, end: LocalDate): LocalDate {
-        val daysBetween = ChronoUnit.DAYS.between(start, end)
-        val randomDays = Random.nextLong(daysBetween + 1)
-        return start.plusDays(randomDays)
+
     }
 
 
- }
