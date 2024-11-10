@@ -9,3 +9,12 @@ data class GalleryItem(
     val id: String,
     @Json(name = "url_s") val url: String,
 )
+
+
+/*
+data class GalleryItem(
+    val title: String,
+    val id: String,
+     val url: String,
+)
+*/

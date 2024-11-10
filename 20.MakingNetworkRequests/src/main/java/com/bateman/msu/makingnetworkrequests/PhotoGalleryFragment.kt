@@ -62,6 +62,15 @@ class PhotoGalleryFragment : Fragment(){
             }*/
         }
 
+     /*   viewLifecycleOwner.lifecycleScope.launch {
+            viewLifecycleOwner.repeatOnLifecycle(Lifecycle.State.STARTED) {
+                photoGalleryViewModel.galleryItems.collect { items ->
+
+                    Log.d(TAG, "Items = $items")
+                }
+            }
+        }*/
+
         viewLifecycleOwner.lifecycleScope.launch {
             viewLifecycleOwner.repeatOnLifecycle(Lifecycle.State.STARTED) {
                 photoGalleryViewModel.galleryItems.collect { items ->
