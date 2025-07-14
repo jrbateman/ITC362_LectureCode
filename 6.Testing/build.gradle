@@ -49,5 +49,13 @@ android {
         implementation libs.activity.ktx
         testImplementation libs.junit
 
+
+        androidTestImplementation(libs.jupiter.junit.jupiter)
+        androidTestImplementation(libs.androidx.runner)
+        androidTestImplementation (libs.androidx.espresso.core.v361)
+
     }
+}
+dependencies {
+    implementation libs.androidx.junit.ktx
 }
