@@ -6,12 +6,11 @@ plugins {
 
 android {
     namespace 'com.bateman.bignerdranch.CriminalIntent'
-    compileSdk 34
+    compileSdk 35
 
     defaultConfig {
         applicationId "com.bateman.bignerdranch.CriminalIntent"
-        minSdk 32
-        targetSdk 34
+        minSdk 33
         versionCode 1
         versionName "1.0"
 

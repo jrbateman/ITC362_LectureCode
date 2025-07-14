@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace 'com.bateman.bignerdranch.CriminalIntent'
-    compileSdk 34
+    compileSdk 35
 
     defaultConfig {
         applicationId "com.bateman.bignerdranch.CriminalIntent"
-        minSdk 32
-        targetSdk 34
+        minSdk 33
+
         versionCode 1
         versionName "1.0"
 
@@ -43,13 +43,12 @@ dependencies {
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
-    implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+    implementation(libs.activity.ktx)
     implementation (libs.androidx.recyclerview)
     implementation(libs.androidx.lifecycle.viewmodel.ktx)
     implementation(libs.androidx.fragment.ktx)
 
     testImplementation libs.junit
-    androidTestImplementation libs.androidx.junit.v115
-    androidTestImplementation libs.androidx.espresso.core.v351
+
 }
