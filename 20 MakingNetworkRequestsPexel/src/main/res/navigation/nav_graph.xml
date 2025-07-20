@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/photoGalleryFragment"
-        android:name="com.bateman.pexelsapiview.PhotoGalleryFragment"
+        android:name="com.bateman.makingnetworkrequestspexel.PhotoGalleryFragment"
         android:label="PhotoGalleryFragment"
         tools:layout="@layout/fragment_photo_gallery">
         <action
@@ -16,8 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/photoSingleFragment"
-        android:name="com.bateman.pexelsapiview.PhotoSingleFragment"
-        android:label="PhotoSingleFragment"
+        android:name="com.bateman.makingnetworkrequestspexel.PhotoSingleFragment"
         tools:layout="@layout/fragment_photo_single">
         <argument
             android:name="PhotoURL"

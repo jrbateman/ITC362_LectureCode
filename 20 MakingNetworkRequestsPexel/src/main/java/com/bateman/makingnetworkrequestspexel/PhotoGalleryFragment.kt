@@ -16,7 +16,7 @@ import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 import com.bateman.makingnetworkrequestspexel.databinding.FragmentPhotoGalleryBinding
-import com.bateman.pexelsapiview.PhotoGalleryFragmentDirections
+import com.bateman.makingnetworkrequestspexel.PhotoGalleryFragmentDirections
 import kotlinx.coroutines.launch
 
 private const val TAG = "PhotoGalleryFragment"
